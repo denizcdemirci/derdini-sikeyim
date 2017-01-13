@@ -4,9 +4,11 @@ hayatın en büyük eksiği derdini sikeyim butonunu sizler için ekşi sözlü�
 
 ![derdini sikeyim butonu](http://i.imgur.com/RJIHOQJ.png)
 
-bazen öyle entryler görürsünüz ki yazarın derdini sikesiniz gelir. yazarların en çok istediği ama sözlüğe bir türlü eklenmeyen butonu sizler için ekledik. artık içinizden derdini sikeyim demek yerine sizin için hazırladığımız buton ile yazarın derdini sikebilirsiniz.
+bazen öyle entry'ler görürsünüz ki yazarın derdini sikesiniz gelir. ekşi sözlük yazarların çok istediği ama bir türlü sözlüğe eklenmeyen butonu sizler için yaptık. artık içinizden derdini sikeyim demek yerine sizin için hazırladığımız buton ile doya doya yazarın derdini sikebilirsiniz.
 
 eklentiyi chrome web store'dan indirebilirsiniz: https://chrome.google.com/webstore/detail/ekşi-sözlük-derdini-sikey/akncmianpmgdmhjojoihcocmndappamo
+
+buton başlığı: https://eksisozluk.com/derdini-sikeyim-butonu--3241073
 
 
 ### lisans

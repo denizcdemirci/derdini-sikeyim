@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('footer .feedback').forEach((el, index) => {
     const wrapperEl = document.createElement('span');
     wrapperEl.classList.add(elementClass);
+    wrapperEl.setAttribute('title', title);
     wrapperEl.innerText = buttonText;
 
     wrapperEl.onclick = () => {

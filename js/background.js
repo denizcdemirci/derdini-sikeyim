@@ -7,7 +7,7 @@ const audio = new Audio(
 );
 audio.setAttribute('type', 'audio/mpeg');
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   document.body.insertAdjacentElement('afterbegin', audio);
 
   document.querySelectorAll('footer .feedback').forEach((el, index) => {
@@ -20,5 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
       audio.currentTime = 0;
       audio.play();
     };
+
+    el.appendChild(wrapperEl);
   });
 });

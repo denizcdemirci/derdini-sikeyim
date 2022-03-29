@@ -1,26 +1,19 @@
-const title = 'Basarsan küfür eder';
-const elementClass = 'derdini-sikeyim';
-const buttonText = 'derdini sikeyim';
-
-const audio = new Audio(
-  `chrome-extension://${chrome.runtime.id}/sound/derdini-sikeyim.mp3`,
-);
+const audio = new Audio(`chrome-extension://${chrome.runtime.id}/sound/derdini-sikeyim.mp3`);
 audio.setAttribute('type', 'audio/mpeg');
 
-window.addEventListener('load', () => {
-  document.body.insertAdjacentElement('afterbegin', audio);
+document.body.insertAdjacentElement('beforeend', audio);
 
-  document.querySelectorAll('footer .feedback').forEach((el, index) => {
-    const wrapperEl = document.createElement('span');
-    wrapperEl.classList.add(elementClass);
-    wrapperEl.setAttribute('title', title);
-    wrapperEl.innerText = buttonText;
+document.querySelectorAll('footer .feedback-container').forEach((el) => {
+  const wrapperEl = document.createElement('a');
+  wrapperEl.innerText = 'derdini sikeyim';
+  wrapperEl.setAttribute('title', 'tıklarsan küfür eder');
+  wrapperEl.style.margin = '0 10px';
+  wrapperEl.style.verticalAlign = 'middle';
 
-    wrapperEl.onclick = () => {
-      audio.currentTime = 0;
-      audio.play();
-    };
+  wrapperEl.onclick = () => {
+    audio.currentTime = 0;
+    audio.play();
+  };
 
-    el.appendChild(wrapperEl);
-  });
+  el.appendChild(wrapperEl);
 });
